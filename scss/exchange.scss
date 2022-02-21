@@ -1,0 +1,50 @@
+@import 'fonts';
+$font-stack: "HelveticaNeue";
+$font-stack1: "Helvetica-heavy";
+$font-stack2: "Roboto-Regular";
+$font-stack3: "Coolvetica";
+.accordion-body {
+    margin: 0 0 3rem 0;
+    padding: 0;
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        font-family: $font-stack;
+        font-size: 1.4rem;
+        font-weight: 700;
+        }
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.2s ease-out;
+            .p {
+                font-family: $font-stack;
+                font-size: 1.3rem;
+            }
+            p {
+                @extend .p;
+            }
+        }
+        .accordion:after {
+            content: '\02795'; 
+            font-size: 13px;
+            color: #777;
+            float: right;
+            margin-left: 5px;
+        }
+        .active:after {
+            content: "\2796"; 
+        }
+}

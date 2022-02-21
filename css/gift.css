@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PragmaticaExtraLight";
+  src: url(../fonts/PragmaticaExtraLight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "NimbusSan";
+  src: url(../fonts/NimbusSanL-Reg.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "NimbusSanL-Bol";
+  src: url(../fonts/NimbusSanL-Bol.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url(../fonts/CoolveticaEl-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(../fonts/HelveticaNeue-Thin.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica-heavy";
+  src: url(../fonts/HelveticaNeue.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PragmaticaExtraLight";
+  src: url(../fonts/PragmaticaExtraLight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "NimbusSan";
+  src: url(../fonts/NimbusSanL-Reg.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "NimbusSanL-Bol";
+  src: url(../fonts/NimbusSanL-Bol.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url(../fonts/CoolveticaEl-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(../fonts/HelveticaNeue-Thin.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica-heavy";
+  src: url(../fonts/HelveticaNeue.ttf) format("truetype");
+}
+
+.accordion-body {
+  margin: 0 0 3rem 0;
+  padding: 0;
+}
+
+.accordion-body .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-family: "HelveticaNeue";
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.accordion-body .active, .accordion-body .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion-body .panel {
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion-body .panel .p, .accordion-body .panel p {
+  font-family: "HelveticaNeue";
+  font-size: 1.3rem;
+}
+
+.accordion-body .accordion:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion-body .active:after {
+  content: "\2796";
+}
+
+.gift-form, .gift-form .input-group, .gift-form .input-group span, .gift-form input, .gift-form button {
+  font-family: "HelveticaNeue";
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.gift-text p, .gift-text .p, .gift-text .accordion-body .panel p, .accordion-body .panel .gift-text p, .atelier {
+  margin-bottom: 2rem;
+  font-family: "Roboto-Regular";
+  font-size: 1.1rem;
+  text-align: justify;
+  color: #4b4141;
+}
+
+.gift-text {
+  margin-bottom: 2rem;
+}
+
+.gift-form .input-group span {
+  background-color: #bfb7b1;
+}
+
+.gift-image {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
+}
+
+.blockquote {
+  color: #5c4a3c;
+  font-family: "HelveticaNeue";
+  font-size: 3rem;
+  margin: 4rem auto 1rem auto;
+}
+
+.blockquote-footer {
+  font-family: "HelveticaNeue";
+  font-size: 1rem;
+  margin: 0 auto 3rem auto;
+}

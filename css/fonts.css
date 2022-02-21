@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PragmaticaExtraLight";
+  src: url(../fonts/PragmaticaExtraLight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "NimbusSan";
+  src: url(../fonts/NimbusSanL-Reg.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "NimbusSanL-Bol";
+  src: url(../fonts/NimbusSanL-Bol.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url(../fonts/CoolveticaEl-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(../fonts/HelveticaNeue-Thin.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica-heavy";
+  src: url(../fonts/HelveticaNeue.ttf) format("truetype");
+}

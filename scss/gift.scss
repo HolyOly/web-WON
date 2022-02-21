@@ -1,0 +1,59 @@
+@import 'fonts';
+@import 'exchange';
+%text-input {
+    font-family: $font-stack;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+%text-sertificate {
+    margin-bottom: 2rem;
+    font-family: $font-stack2;
+    font-size: 1.1rem;
+    text-align: justify;
+    color: rgb(75, 65, 65)
+}
+.gift-text {
+    margin-bottom: 2rem;
+    p {
+        @extend %text-sertificate;
+    }
+    .p {
+        @extend %text-sertificate;
+    }
+}
+.gift-form {
+    @extend %text-input;
+    .input-group {
+        @extend %text-input;
+        span {
+            @extend %text-input;
+            background-color: #bfb7b1;
+        }
+    }
+    input {
+        @extend %text-input;
+    }
+    button {
+        @extend %text-input;
+    }
+}
+.gift-image {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
+}
+.atelier {
+    @extend %text-sertificate;
+}
+.blockquote {
+    color: #5c4a3c;
+    font-family: $font-stack;
+    font-size: 3rem;
+    margin: 4rem auto 1rem auto;
+}
+.blockquote-footer {
+    font-family: $font-stack;
+    font-size: 1rem;
+    margin: 0 auto 3rem auto;
+}

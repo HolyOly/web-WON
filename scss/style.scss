@@ -1,0 +1,356 @@
+@import 'fonts';
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+$font-stack: "HelveticaNeue";
+$font-stack1: "Helvetica-heavy";
+$font-stack2: "Roboto-Regular";
+$font-stack3: "Coolvetica";
+$primary-color: #dfd5ce;
+$primary-color1: white;
+$primary-color3: black;
+$primary-color4: #d5cfc8;
+$primary-color5: #887e77;
+$primary-color6: #646160;
+%text-designe {
+    font-family: $font-stack3;
+    font-weight: 600;
+    text-decoration: none;
+    color: $primary-color5;
+}
+%img-designe {
+    margin: 6rem auto;
+    width: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+%h-and-button-designe {
+    .h2 {
+        margin: 15vw auto 2vw;
+        color: $primary-color;
+        font: 5vw $font-stack;
+    }
+    .h4 {
+        margin: 2vw auto 5vw;
+        color: $primary-color;
+        font: 2em $font-stack;
+        font-weight: 550;
+    }
+    button {
+        display: inline-block;
+        margin: 3vw auto 15vw;
+        padding: .7em;
+        background: none;
+        border: 1px solid $primary-color;
+        font-family: $font-stack2;
+        font-size: 1.6em;
+        transition: 1s;
+        color: $primary-color3;
+        a {
+            transition: 1s;
+            text-decoration: none;
+            color: $primary-color1;
+            &:hover {
+            color: $primary-color3;
+            }
+        }
+        &:hover {
+            background: $primary-color;
+            opacity: 0.5;
+            color: $primary-color6;
+        }   
+    }
+}
+%p-decoration {
+    font-size: 1.3em;
+    margin-top: 2rem;
+    color: #C7C5BF;
+    font-family: $font-stack;
+}
+%h3-h4_decoration {
+    margin-top: 2rem;
+    color: #C7C5BF;
+    font-family: $font-stack3;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+%h1_decoration {
+    margin-top: 2rem;
+    color: $primary-color6;
+    font-family: $font-stack3;
+    font-weight: 400;
+    font-size: 4rem;
+}
+body {
+    background-color: $primary-color4;
+}
+.header {
+    background-color: rgba(0,0,0, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    transition: 1s;
+    margin: 0 auto;
+    text-align: center;
+            a {
+                display: block;
+                margin: 0 auto;
+                text-decoration: none;
+                font-family: $font-stack;
+                font-size: 2rem;
+                color: $primary-color;
+                transition-duration: 1s;
+                &:hover {
+                    color: $primary-color1;
+                    font-weight: 500;
+                }
+            }
+        
+    
+}
+.header_hidden {
+    transform: translateY(-100%); 
+    background-color: rgba(180, 166, 166, 0.1);
+    color: $primary-color6;
+    font-weight: 500;
+}
+.counter {
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1px;
+    padding: 5px;
+    color: #fff;
+    background: #DD3543;
+}
+.margin-0 {
+    margin: 0;
+    padding: 0;
+}
+.carousel {
+    #carouselExampleIndicators {
+        z-index: 1;
+    }
+    .img-carousel {
+        width: 100%; 
+    }
+    .h3-1 {
+        margin-bottom: 5em;
+        font: 5vw $font-stack;
+        color: $primary-color1;
+    }
+    .h3-2 {
+        margin: 1em 5em;
+        font: 5vw $font-stack;
+        color: $primary-color1;
+    }
+    .h3-3 {
+        margin-right: 6em;
+        margin-bottom: 3em;
+        font: 5vw $font-stack;
+        color: $primary-color1;
+    }
+}
+.promo {
+    margin: 10vw auto;
+    .h2 {
+        text-align: center;
+        font-family: $font-stack;
+        font-size: 2em;
+        font-weight: 500;
+    }
+    .img-promo {
+        width: 4rem;
+        margin: 0 auto;
+    }
+}
+.promo_1 {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    #test #test1 { 
+        width: 100%;
+        overflow: hidden; 
+    }
+    #test img { 
+        width: 70%; 
+        animation: none 2s linear forwards; 
+    }
+    #test1 img { 
+        width: 70%; 
+        animation: none 2s linear forwards; 
+    }
+    @keyframes img-in {
+        0% { filter: grayscale(50%); opacity: 0; transform: scale(1.01);}
+        50% { filter: grayscale(50%); opacity: 1;}
+        100% { filter: grayscale(0);}
+    }
+    @keyframes img-out {
+        0% { filter: grayscale(0); opacity: 1; transform: scale(1); }
+        30% { filter: grayscale(50%); }
+        100% { filter: grayscale(50%); opacity: 0; transform: scale(1.01); }
+    }
+    ul {
+        display: inline;
+        text-align: center;
+        margin: 0 auto;
+        li {
+            list-style-type: none;
+            margin: 2vw auto; 
+            a {
+                @extend %text-designe;
+                font-size: 2.3em;
+                transition: 1s;
+                &:hover {
+                    color: $primary-color6;
+                }
+            }
+        }
+    }
+}
+.sertificate {
+    @extend %img-designe;
+    background-image: url("../img/bgimg_3.jpg");
+    @extend %h-and-button-designe;
+}
+.promo_about {
+    position: relative;
+    display: inline;
+    text-align: center;
+    margin: 4rem auto;
+    .h2 {
+        text-align: center;
+        font-size: 2.3em;
+        @extend %text-designe;
+    }
+    .img__about_1 {
+        display: block;
+        width: 100%;
+        margin: 8rem auto 1rem;
+    }
+    .img__about_2 {
+        @extend .img__about_1;
+        margin: 1rem auto 0;
+    }
+    .img__about_3 {
+        @extend .img__about_1;
+        margin: -7rem auto 1rem;
+    }
+    p {
+        font-family: $font-stack2;
+    }
+}
+.sewing {
+    @extend %img-designe;
+    background-image: url("../img/pic_1.jpg");
+    @extend %h-and-button-designe;
+}
+.gallery {
+    @extend %text-designe;
+    text-align: center;
+    margin-bottom: 5rem;
+    .h2 {
+        font-size: 4em;
+    }
+    .img-gal {
+    margin-top: 1rem;
+        img {
+            width: 100%;
+            overflow: hidden;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            width: 100%;
+            overflow: hidden;
+            transition: 1s;
+            &:hover {
+                transform: scale(1.1); 
+            }
+        }
+    }
+}
+.footer {
+    background-color: #2D2A2B;
+    .h3, .h4 {
+        @extend %h3-h4_decoration;
+        text-align: left;
+    }
+    .socials {
+        @extend %h3-h4_decoration;
+        text-align: center;
+        display: block;
+        a {
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            margin: 2rem auto;
+            color: $primary-color;
+            padding: 0 .5rem;
+            i {
+                color: $primary-color;
+                margin: 0 auto;
+                font-size: 1.5em;
+                transition: 1s;
+                &:hover {
+                    color: #998788;
+                }
+            }
+        }  
+    }
+    p {
+        @extend %p-decoration;
+        text-align: left;
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #C7C5BF;
+            transition: 1s;
+            &:hover {
+                color: $primary-color1;
+                transition: 1s;
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+// WOMEN MEN KIDS
+.market {
+    .h1 {
+        @extend %h1_decoration;
+        margin: 4rem auto 2rem auto;
+        text-align: center;
+        
+    }
+    .card {
+        margin: 0 auto 2rem auto;
+        .card-body {
+            display: inline-block;
+            margin: 0 auto;
+            p {
+                margin: 0 2rem 0 auto;
+                display: inline;
+                font-family: $font-stack;
+                font-size: 1.2rem;
+            }
+            button {  
+                text-align: right;
+                margin: 0rem auto auto 2rem;
+                display: inline;
+                background: $primary-color4;
+                border: 1px solid $primary-color;
+                font-family: $font-stack2;
+                font-size: 1.1em;
+                transition: 1s;
+                a {
+                    transition: 1s;
+                    text-decoration: none;
+                    color: $primary-color6;
+                    &:hover {
+                    color: $primary-color3;
+                    }
+                }
+            }
+            
+        }
+    }
+}
